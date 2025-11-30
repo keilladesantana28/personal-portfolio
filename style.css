@@ -1,0 +1,143 @@
+
+/*Estilo Geral*/
+*{
+    margin: 0;
+    padding:0 ; 
+    box-sizing: border-box; 
+   font-family: "Science Gothic", sans-serif;
+}
+
+body{
+    background: hsl(249, 86%, 9%);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.img-topo-site img{
+    width: 350px;
+    height: auto;
+    display: block; 
+    border-radius: 20px;              
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4); 
+    transition: .3s;                   
+}
+.img-topo-site img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.7);
+    cursor : pointer; 
+    transition: .2s;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px; 
+    font-weight: 700;
+    background-color: hwb(182 11% 8%);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.flex {
+    display: flex;
+}
+/* Header(cabeçalho) */
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{   /*para identificar os elemntos dessa tag */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #525252;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.10);
+}
+
+
+header nav ul{
+    list-style-type: none;
+
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px hwb(182 11% 8%);
+    transform: scale(1.05);
+}
+
+/* topo do site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site  h1{
+    color: hwb(0 100% 0%);
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: hwb(182 11% 8%);
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff; 
+    margin: 40px 0px;
+}
+
+.topo-do-site .txt-topo-site p span{
+    color: hwb(182 11% 8%); 
+
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: animação 2s ease-in-out infinite alternate;
+}
+
+@keyframes animação {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
