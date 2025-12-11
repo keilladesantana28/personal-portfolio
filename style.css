@@ -38,6 +38,13 @@ body{
     transition: .2s;
 }
 
+.img-sobre-mim img{
+    width: 280px; 
+    height: auto; 
+    display: block; 
+    border-radius: 20px;   
+
+}
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px; 
@@ -47,6 +54,14 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+h2.titulo span {
+    color: hwb(182 11% 8%); 
 }
 
 .flex {
@@ -141,4 +156,88 @@ section.topo-do-site.flex{
         top: 30px;
     }
 
+}
+/*Estilo das especialidades*/
+
+section.Especialidades{
+    padding: 40px 4%;
+}
+
+section.Especialidades .flex{
+    gap: 60px; 
+}
+.Especialidades .especialidades-box{
+    color: #fff; 
+    padding: 40px ; 
+    border-radius: 25px;
+    border: 2px solid #ffffff00; 
+    margin-top: 25px;
+}
+
+.Especialidades .especialidades-box:hover{
+    color:#fff;
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.7);
+    cursor : pointer; 
+    transition: .2s;
+    
+}
+
+.Especialidades .especialidades-box i {
+    font-size: 70px; 
+    color: hwb(182 11% 8%); 
+    
+}
+
+.Especialidades .especialidades-box h3{
+    font-size: 28px; 
+    margin: 15px 0; 
+
+}
+
+section.sobre-mim{
+    padding: 40px 4%; 
+}
+
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 60px; 
+}
+.sobre-mim .texto-sobre-mim{
+    color: #fff; 
+}
+
+.sobre-mim .texto-sobre-mim h2{
+    font-size: 40px; 
+    line-height: 40px;
+    margin-bottom:30px; 
+
+}
+.sobre-mim .texto-sobre-mim h2 span{
+    color: hwb(182 11% 8%); 
+    display: block; 
+}
+
+.sobre-mim .texto-sobre-mim p{
+    margin: 20px 0; 
+    text-align: justify;
+
+}
+
+.sobre-mim .texto-sobre-mim .btn-social button{
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%; 
+    border: none; 
+    background-color: hwb(182 11% 8%) ;
+    font-size: 22px; 
+    cursor: pointer;
+    transition: .2s; 
+    margin: 0 5px;  
+
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 8px hwb(182 11% 8%);
+    transform: scale(1.05);
 }
