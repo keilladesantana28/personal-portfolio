@@ -8,7 +8,7 @@
 }
 
 body{
-    background: hsl(249, 86%, 9%);
+    background: hsl(278, 88%, 30%);
     height: 100vh;
 }
 
@@ -81,7 +81,7 @@ header > .interface{   /*para identificar os elemntos dessa tag */
 }
 
 header a{
-    color: #525252;
+    color: #2e2c2c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -106,9 +106,10 @@ header nav ul li{
 
 
 
-.btn-contato button:hover{
+.btn-contato button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px hwb(182 11% 8%);
     transform: scale(1.05);
+    transition: .2s;
 }
 
 /* topo do site */
@@ -241,3 +242,51 @@ section.sobre-mim .flex{
     box-shadow: 0px 0px 8px hwb(182 11% 8%);
     transform: scale(1.05);
 }
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #222222ad;
+    border: 0; 
+    outline: 0;
+    padding: 20px 15px; 
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px; 
+     
+
+}
+
+form textarea{
+    resize: none; 
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input{
+    width: 120px; 
+    background-color: hwb(182 11% 8%);
+    color: #000000; 
+    font-weight: 900px;  
+    cursor: pointer;
+}
+
