@@ -8,7 +8,7 @@
 }
 
 body{
-    background: hsl(300, 96%, 29%);
+    background: hsl(300, 97%, 27%);
     height: 100vh;
 }
 
@@ -145,6 +145,7 @@ section.topo-do-site.flex{
 }
 
 .topo-do-site .img-topo-site img{
+    width: 400px;
     position: relative;
     animation: animação 2s ease-in-out infinite alternate;
 }
