@@ -8,7 +8,7 @@
 }
 
 body{
-    background: hsl(249, 86%, 9%);
+    background: hsl(300, 97%, 27%);
     height: 100vh;
 }
 
@@ -38,6 +38,13 @@ body{
     transition: .2s;
 }
 
+.img-sobre-mim img{
+    width: 280px; 
+    height: auto; 
+    display: block; 
+    border-radius: 20px;   
+
+}
 .btn-contato button{
     padding: 10px 40px;
     font-size: 18px; 
@@ -47,6 +54,14 @@ body{
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+h2.titulo span {
+    color: hwb(182 11% 8%); 
 }
 
 .flex {
@@ -66,7 +81,7 @@ header > .interface{   /*para identificar os elemntos dessa tag */
 }
 
 header a{
-    color: #525252;
+    color: #2e2c2c;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -91,9 +106,10 @@ header nav ul li{
 
 
 
-.btn-contato button:hover{
+.btn-contato button:hover, form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px hwb(182 11% 8%);
     transform: scale(1.05);
+    transition: .2s;
 }
 
 /* topo do site */
@@ -129,6 +145,7 @@ section.topo-do-site.flex{
 }
 
 .topo-do-site .img-topo-site img{
+    width: 400px;
     position: relative;
     animation: animação 2s ease-in-out infinite alternate;
 }
@@ -141,4 +158,185 @@ section.topo-do-site.flex{
         top: 30px;
     }
 
+}
+/*Estilo das especialidades*/
+
+section.Especialidades{
+    padding: 40px 4%;
+}
+
+section.Especialidades .flex{
+    gap: 60px; 
+}
+.Especialidades .especialidades-box{
+    color: #fff; 
+    padding: 40px ; 
+    border-radius: 25px;
+    border: 2px solid #ffffff00; 
+    margin-top: 25px;
+}
+
+.Especialidades .especialidades-box:hover{
+    color:#fff;
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.7);
+    cursor : pointer; 
+    transition: .2s;
+    
+}
+
+.Especialidades .especialidades-box i {
+    font-size: 70px; 
+    color: hwb(182 11% 8%); 
+    
+}
+
+.Especialidades .especialidades-box h3{
+    font-size: 28px; 
+    margin: 15px 0; 
+
+}
+
+section.sobre-mim{
+    padding: 40px 4%; 
+}
+
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 60px; 
+}
+.sobre-mim .texto-sobre-mim{
+    color: #fff; 
+}
+
+.sobre-mim .texto-sobre-mim h2{
+    font-size: 40px; 
+    line-height: 40px;
+    margin-bottom:30px; 
+
+}
+.sobre-mim .texto-sobre-mim h2 span{
+    color: hwb(182 11% 8%); 
+    display: block; 
+}
+
+.sobre-mim .texto-sobre-mim p{
+    margin: 20px 0; 
+    text-align: justify;
+
+}
+
+.sobre-mim .texto-sobre-mim .btn-social button{
+    width: 45px;
+    height: 45px; 
+    border-radius: 50%; 
+    border: none; 
+    background-color: hwb(182 11% 8%) ;
+    font-size: 18px; 
+    cursor: pointer;
+    transition: .2s; 
+    margin: 0 5px;  
+
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 8px hwb(182 11% 8%);
+    transform: scale(1.05);
+}
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    
+    max-width: 500px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #222222ad;
+    border: 0; 
+    outline: 0;
+    padding: 20px 15px; 
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px; 
+     
+
+}
+
+form textarea{
+    resize: none; 
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+
+form .btn-enviar input{
+    width: 120px; 
+    background-color: hwb(182 11% 8%);
+    color: #000000; 
+    font-weight: 900px;  
+    cursor: pointer;
+}
+
+/* estilo do rodapé*/ 
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #afafaf; 
+
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .logo-footer img{
+     width: 60px;
+    height: auto;
+   
+}
+
+footer .btn-social button{
+    width: 30px;
+    height: 30px; 
+    border-radius: 50%; 
+    border: none; 
+    background-color: hwb(182 11% 8%) ;
+    font-size: 15px; 
+    cursor: pointer;
+    transition: .2s; 
+    margin: 0 5px; 
+}
+
+
+footer .line-footer{
+    padding: 20px 0; 
+}
+
+.borda{
+    border-top: 2px solid hwb(182 11% 8%);
+}
+
+footer .line-footer p i{
+    color: hwb(182 11% 8%); 
+    font-size: 22px; 
+}
+
+footer .line-footer p a{
+    color: #fff; 
+    font-size: 15px; 
 }
